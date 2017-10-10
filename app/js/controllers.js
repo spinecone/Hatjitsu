@@ -164,7 +164,8 @@ function RoomCtrl($scope, $routeParams, $timeout, socket) {
   };
 
   var votingFinished = function () {
-    return $scope.forcedReveal || $scope.votes.length === $scope.voterCount;
+    $scope.doneVoting = $scope.forcedReveal || $scope.votes.length === $scope.voterCount;
+    return $scope.doneVoting;
   };
 
   var setVotingState = function () {

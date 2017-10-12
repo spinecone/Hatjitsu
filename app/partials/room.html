@@ -78,7 +78,7 @@
         </div>
       </div>
 
-      <div class="voting-average">Average: <b>{{votingAverage}} (SD = {{votingStandardDeviation}})</b></div>
+      <div ng-show="doneVoting" class="voting-average">Average: <b>{{votingAverage}} (SD = {{votingStandardDeviation}})</b></div>
     </div>
 
     <div ng-switch on="showAdmin" >
